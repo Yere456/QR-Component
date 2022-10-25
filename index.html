@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(203, 71%, 77%); }
+
+    body{
+      background-color: hsl(204, 51%, 87%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+
+    }
+    
+    .qr-container{
+      width: 330px;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: aliceblue;
+      border-radius: 20px;
+      position: relative;
+      top: 100px;
+    }
+
+    h1{
+      text-align: center;
+      position: relative;
+      top: -20px;
+    }
+
+    p{
+      position: relative;
+      top: 10px;
+      width: 300px;
+      text-align: center;
+      position: relative;
+      top: -20px;
+    }
+
+    #qr-code{
+      width: 300px;
+      border-radius: 20px;
+      position: relative;
+      top: -15px;
+    }
+  </style>
+</head>
+<body>
+    <div class="qr-container">
+      <figure>
+        <img id="qr-code" src="./images/image-qr-code.png" alt="qr-code">
+      </figure>
+      <h1>QR Code for entry to my menu</h1>
+      <p>Scan the QR Code To entry in the menu and see the options</p>
+    </div>
+</body>
+</html>
